@@ -1,0 +1,465 @@
+1.login
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpink"
+    tools:context="com.google.myapp.app1.add">
+
+
+
+    <Button
+
+
+        android:id="@+id/ulogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:text="LOGIN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/umail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="206dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="142dp"
+        android:layout_height="161dp"
+        app:srcCompat="@drawable/preg"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date of last period"
+        android:layout_below="@+id/umail"
+        android:layout_alignLeft="@+id/umail"
+        android:layout_alignStart="@+id/umail"
+        android:layout_marginTop="43dp" />
+
+</RelativeLayout>
+
+
+2.tri list
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+
+    <Button
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trimester 1"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="220dp"
+        android:layout_above="@+id/t2"
+        android:layout_alignLeft="@+id/t2"
+        android:layout_alignStart="@+id/t2"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trimester 2"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="323dp"
+        android:layout_above="@+id/t3"
+        android:layout_alignLeft="@+id/t3"
+        android:layout_alignStart="@+id/t3"
+        android:layout_marginBottom="44dp" />
+
+    <Button
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trimester 3"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="424dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/tri"
+        android:layout_above="@+id/t1"
+        android:layout_alignParentTop="true" />
+</RelativeLayout>
+
+
+3.tri 1
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+
+    <Button
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXERCISES"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VACCINATIONS"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="403dp"
+        android:layout_marginBottom="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/e1"
+        android:layout_alignStart="@+id/e1" />
+
+    <Button
+        android:id="@+id/d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIET PLAN"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="60dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/e1"
+        android:layout_alignStart="@+id/e1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/exe"
+        android:layout_toRightOf="@+id/v1"
+        android:layout_toEndOf="@+id/v1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/diet"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vac"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/v1"
+        android:layout_toEndOf="@+id/v1"
+        android:layout_alignTop="@+id/v1" />
+</RelativeLayout>
+
+4.tri 2
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+    <Button
+        android:id="@+id/e2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXERCISES"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/v2"
+        android:layout_alignStart="@+id/v2"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:id="@+id/d2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIET PLAN"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="50dp"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/e2"
+        android:layout_alignEnd="@+id/e2" />
+
+    <Button
+        android:id="@+id/v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VACCINATIONS"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="393dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="66dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sexe"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/v2"
+        android:layout_toEndOf="@+id/v2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sdiet"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/v2"
+        android:layout_toRightOf="@+id/v2"
+        android:layout_toEndOf="@+id/v2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vac"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+5.tri 3
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+
+    <Button
+        android:id="@+id/e3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EXERCISES"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/d3"
+        android:layout_alignStart="@+id/d3"
+        android:layout_marginTop="23dp" />
+
+    <Button
+        android:id="@+id/d3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIET PLAN"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="62dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/v3"
+        android:layout_alignStart="@+id/v3" />
+
+    <Button
+        android:id="@+id/v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VACCINATIONS"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="388dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="83dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/exe"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/v3"
+        android:layout_toEndOf="@+id/v3" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/diet"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignLeft="@+id/imageView11"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vac"
+        android:layout_alignTop="@+id/v3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+
+6.f exe
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:onClick="videoplay"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:layout_above="@+id/videoView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="386dp"
+        android:layout_height="318dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="38dp"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="121dp" />
+</RelativeLayout>
+
+
+7.f diet
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIET CHART"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ftridietplan"
+        tools:layout_editor_absoluteY="45dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+</RelativeLayout>
+
+
+8.fvac
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.google.myapp.app1.add">
+
+
+<TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VACCINATIONS"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="277dp"
+        android:layout_height="106dp"
+        android:text="TT(Tetanus Toxoid)"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="132dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp" />
+</RelativeLayout>
+
+
+same for second and third trimesters
